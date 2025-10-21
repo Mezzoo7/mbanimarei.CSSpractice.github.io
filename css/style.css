@@ -53,7 +53,7 @@ body {
 
 #content-wrapper {
   /* Use the actual repeating diagonal stripe image */
-  background-image: url("../images/repeating.jpg");
+  background-image: url("../images/repeating.png");
   background-repeat: repeat;
   float: left;
   width: 960px;
