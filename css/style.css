@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/black.jpg");
+  background-image: url("../images/black.jpg");
   background-color: #1a1a1a;
 }
 
@@ -52,21 +52,9 @@ body {
 }
 
 #content-wrapper {
-  /* DIAGONAL STRIPED BACKGROUND */
-  background: 
-    linear-gradient(135deg, 
-      #FF9B7F 0%, 
-      #FF9B7F 24.5%, 
-      transparent 25%, 
-      transparent 49.5%,
-      #C7A8D8 50%,
-      #C7A8D8 74.5%,
-      transparent 75%,
-      transparent 99.5%,
-      #FF9B7F 100%
-    );
-  background-size: 200px 200px;
-  background-color: #FFB399;
+  /* Use the actual repeating diagonal stripe image */
+  background-image: url("../images/repeating.jpg");
+  background-repeat: repeat;
   float: left;
   width: 960px;
 }
