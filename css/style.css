@@ -1,22 +1,14 @@
+
 body {
-  background-color: #1a1a1a;
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(0,0,0,0.4) 2px,
-      rgba(0,0,0,0.4) 4px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 2px,
-      rgba(0,0,0,0.4) 2px,
-      rgba(0,0,0,0.4) 4px
-    );
-  background-size: 100px 100px;
+  background-color: #1a1a1a; /* fallback color */
+  background-image: url("/images/black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
 
 #page-wrapper {
   width: 960px;
@@ -24,6 +16,7 @@ body {
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
   border-radius: 12px 12px 0px 0px;
 }
+
 
 #header {
   position: relative;
@@ -57,6 +50,7 @@ body {
   font-size: 1.8em;
 }
 
+
 #footer {
   background-color: #777;
   height: 80px;
@@ -66,25 +60,17 @@ body {
   padding-left: 20px;
 }
 
+/* ============================
+   CONTENT WRAPPER: Colorful Background Image
+============================ */
 #content-wrapper {
-  /* DIAGONAL STRIPED BACKGROUND */
-  background: 
-    linear-gradient(135deg, 
-      #FF9B7F 0%, 
-      #FF9B7F 24.5%, 
-      transparent 25%, 
-      transparent 49.5%,
-      #C7A8D8 50%,
-      #C7A8D8 74.5%,
-      transparent 75%,
-      transparent 99.5%,
-      #FF9B7F 100%
-    );
-  background-size: 200px 200px;
-  background-color: #FFB399;
+  background-image: url("/images/colorful.png");
+  background-repeat: repeat; /* repeat to fill area */
+  background-size: auto; /* adjust as needed */
   float: left;
   width: 960px;
 }
+
 
 #main-content {
   min-height: 300px;
@@ -96,11 +82,13 @@ body {
   padding-bottom: 20px;
 }
 
+/* HEADINGS */
 h2 strong {
   font-size: 2em;
   font-weight: 900;
 }
 
+/* FLOATING IMAGE */
 .image-r {
   float: right;
   border: 2px solid blue;
@@ -110,5 +98,92 @@ h2 strong {
   margin: 10px 0 10px 20px;
 }
 
+/* SIDE CONTENT */
 #side-content {
- 
+  min-height: 150px;
+  width: 200px;
+  float: left;
+  background-color: rgba(199, 168, 216, 0.6);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#side-content h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+#side-content ol#news {
+  padding-left: 20px;
+}
+
+#side-content ol#news li {
+  margin-bottom: 15px;
+}
+
+#side-content ol#news li a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#side-content ol#news li a:hover {
+  text-decoration: underline;
+}
+
+#side-content ol#news li div p {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+}
+
+/* NAVIGATION */
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #333;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%;
+}
+
+#main-nav ul li a {
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+
+#main-nav ul li a:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* CENTER ELEMENT */
+#center {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* STRONG ELEMENTS */
+strong {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+/* BULLETS */
+#bul1, #bul2 {
+  margin: 15px 0;
+}
