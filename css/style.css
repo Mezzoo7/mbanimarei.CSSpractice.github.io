@@ -1,14 +1,6 @@
-
 body {
-  background-color: #1a1a1a; /* fallback color */
-  background-image: url("/images/black.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  font-family: Arial, sans-serif;
+  background-image: url("../images/black.jpg");
 }
-
 
 #page-wrapper {
   width: 960px;
@@ -17,13 +9,10 @@ body {
   border-radius: 12px 12px 0px 0px;
 }
 
-
 #header {
   position: relative;
   margin-top: 40px;
   border-radius: 12px 12px 0px 0px;
-  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-  padding: 10px 0;
 }
 
 #header h1 {
@@ -50,27 +39,16 @@ body {
   font-size: 1.8em;
 }
 
-
 #footer {
   background-color: #777;
   height: 80px;
   clear: both;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
 }
 
-/* ============================
-   CONTENT WRAPPER: Colorful Background Image
-============================ */
 #content-wrapper {
-  background-image: url("/images/colorful.png");
-  background-repeat: repeat; /* repeat to fill area */
-  background-size: auto; /* adjust as needed */
+  background-image: url("../images/repeating.png");
   float: left;
-  width: 960px;
 }
-
 
 #main-content {
   min-height: 300px;
@@ -78,17 +56,13 @@ body {
   margin-right: 30px;
   float: left;
   margin-left: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
-/* HEADINGS */
 h2 strong {
   font-size: 2em;
   font-weight: 900;
 }
 
-/* FLOATING IMAGE */
 .image-r {
   float: right;
   border: 2px solid blue;
@@ -98,45 +72,12 @@ h2 strong {
   margin: 10px 0 10px 20px;
 }
 
-/* SIDE CONTENT */
 #side-content {
   min-height: 150px;
   width: 200px;
   float: left;
-  background-color: rgba(199, 168, 216, 0.6);
-  padding: 15px;
-  box-sizing: border-box;
 }
 
-#side-content h3 {
-  margin-top: 0;
-  font-weight: bold;
-}
-
-#side-content ol#news {
-  padding-left: 20px;
-}
-
-#side-content ol#news li {
-  margin-bottom: 15px;
-}
-
-#side-content ol#news li a {
-  color: #0066cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#side-content ol#news li a:hover {
-  text-decoration: underline;
-}
-
-#side-content ol#news li div p {
-  margin: 5px 0 0 0;
-  font-size: 0.9em;
-}
-
-/* NAVIGATION */
 #main-nav {
   float: left;
   width: 100%;
@@ -170,20 +111,12 @@ h2 strong {
   color: #333;
 }
 
-/* CENTER ELEMENT */
 #center {
-  width: 100%;
+  width: 960px;
   text-align: center;
-  margin-top: 20px;
 }
 
-/* STRONG ELEMENTS */
 strong {
   font-weight: 900;
   font-size: 48px;
-}
-
-/* BULLETS */
-#bul1, #bul2 {
-  margin: 15px 0;
 }
