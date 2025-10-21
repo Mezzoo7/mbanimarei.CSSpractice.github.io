@@ -1,5 +1,6 @@
 body {
   background-image: url("images/black.jpg");
+  background-color: #1a1a1a;
 }
 
 #page-wrapper {
@@ -13,6 +14,8 @@ body {
   position: relative;
   margin-top: 40px;
   border-radius: 12px 12px 0px 0px;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  padding: 10px 0;
 }
 
 #header h1 {
@@ -43,11 +46,29 @@ body {
   background-color: #777;
   height: 80px;
   clear: both;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 #content-wrapper {
-  background-image: url("images/repeating.png");
+  /* DIAGONAL STRIPED BACKGROUND */
+  background: 
+    linear-gradient(135deg, 
+      #FF9B7F 0%, 
+      #FF9B7F 24.5%, 
+      transparent 25%, 
+      transparent 49.5%,
+      #C7A8D8 50%,
+      #C7A8D8 74.5%,
+      transparent 75%,
+      transparent 99.5%,
+      #FF9B7F 100%
+    );
+  background-size: 200px 200px;
+  background-color: #FFB399;
   float: left;
+  width: 960px;
 }
 
 #main-content {
@@ -56,6 +77,8 @@ body {
   margin-right: 30px;
   float: left;
   margin-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 h2 strong {
@@ -76,6 +99,37 @@ h2 strong {
   min-height: 150px;
   width: 200px;
   float: left;
+  background-color: rgba(199, 168, 216, 0.6);
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#side-content h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+#side-content ol#news {
+  padding-left: 20px;
+}
+
+#side-content ol#news li {
+  margin-bottom: 15px;
+}
+
+#side-content ol#news li a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#side-content ol#news li a:hover {
+  text-decoration: underline;
+}
+
+#side-content ol#news li div p {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
 }
 
 #main-nav {
@@ -112,11 +166,16 @@ h2 strong {
 }
 
 #center {
-  width: 960px;
+  width: 100%;
   text-align: center;
+  margin-top: 20px;
 }
 
 strong {
   font-weight: 900;
   font-size: 48px;
+}
+
+#bul1, #bul2 {
+  margin: 15px 0;
 }
